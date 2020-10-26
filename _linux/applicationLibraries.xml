@@ -1,0 +1,15 @@
+<application>
+  <component name="libraryTable">
+    <library name="security_demo">
+      <CLASSES>
+        <root url="file://$USER_HOME$/security_demo" />
+      </CLASSES>
+      <JAVADOC />
+      <SOURCES>
+        <root url="file://$USER_HOME$/security_demo/.mvn/wrapper" />
+        <root url="file://$USER_HOME$/security_demo/src/main/java" />
+        <root url="file://$USER_HOME$/security_demo/src/test/java" />
+      </SOURCES>
+    </library>
+  </component>
+</application>
