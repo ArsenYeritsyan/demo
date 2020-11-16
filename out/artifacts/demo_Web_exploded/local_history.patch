@@ -1,0 +1,14 @@
+Index: Dockerfile
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- Dockerfile	(date 1605519475244)
++++ Dockerfile	(date 1605519475244)
+@@ -1,5 +1,5 @@
+ FROM openjdk:8-jdk-alpine
+-MAINTAINER myapp
++MAINTAINER demo
+ VOLUME /tmp
+ RUN apk update
+ ENV APP_HOME /home

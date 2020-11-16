@@ -1,0 +1,21 @@
+version: "3"
+services:
+  mymondodb:
+    image: mongo:latest
+    container_name: "mymongodb"
+    restart: always
+    environment:
+    MONGO_INITDB_ROOT_USERNAME: "root"
+    MONGO_INITDB_ROOT_PASSWORD: "root"
+    MONGO_INITDB_DATABASE: "mydb"
+    ports:
+    - 27017:27017
+  myapp:
+    image: myapp:1.0
+    container_name: "myapp"
+    ports:
+    - 8080:8080
+    links:
+      - mymondodb
+    depends_on:
+      - mymondodb
